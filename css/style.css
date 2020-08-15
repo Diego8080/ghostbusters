@@ -481,6 +481,28 @@ body {
   padding-right: 50px;
 }
 
+.m-menu-button {
+  padding: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-line {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  width: 16px;
+  border-radius: 40px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
 .container {
   max-width: 1130px;
   margin: auto;
@@ -715,4 +737,127 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .card-image {
+    width: 70px;
+    height: 70px;
+  }
+  .header {
+    height: 90px;
+    padding-left: 20px;
+  }
+  .sign-up {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .search-input {
+    margin-left: 20px;
+  }
+  .navigation-link {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .line {
+    margin-left: 20px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 760px;
+  }
+  .navigation {
+    display: none;
+  }
+  .search-input {
+    margin-right: auto;
+  }
+  .film-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .film-subtitle {
+    margin-bottom: 20px;
+  }
+  .film-description, .about-film {
+    margin-bottom: 30px;
+  }
+  .about-text-bold {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .card {
+    flex-basis: 50%;
+  }
+  .card-image {
+    width: 100px;
+    height: 100px;
+  }
+  .news-card {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    height: 80px;
+  }
+  .line {
+    height: 80px;
+  }
+  .film {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .film-wrapper {
+    flex-wrap: wrap;
+  }
+  .film-text {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .cast {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .news {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .header {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+  }
+  .film-text {
+    order: 1;
+    margin-bottom: 0;
+  }
+  .button-group {
+    display: none;
+  }
+  .search-input {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .film-trailer, .poster {
+    width: 100%;
+  }
 }
